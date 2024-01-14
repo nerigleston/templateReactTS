@@ -9,7 +9,7 @@ export default function NavBar() {
   return (
     <>
       <div className="flex justify-around mt-3">
-        <img src={theme === 'dark' ? ReactWhite : ReactBlack} alt="React Logo" />
+        <img src={theme === 'dark' || theme === 'system' ? ReactWhite : ReactBlack} alt="React Logo" />
         <div className="flex justify-center gap-3">
           <ModeToggle />
         </div>
